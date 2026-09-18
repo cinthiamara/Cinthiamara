@@ -1,16 +1,23 @@
-## Hi there 👋
+class pessoa:
+    def _init_(self, n, i, p, a):
+        self.nome = n
+        self.idade = i
+        self.peso = p
+        self.altura = a
 
-<!--
-**cinthiamara/Cinthiamara** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    def apresentacao(self):
+        print(f"O nome da pessoa consultada é {self.nome};\nA idade dele(a) é: {self.idade};")
 
-Here are some ideas to get you started:
+    def fazer_aniversario(self):
+        self.idade += 1
+        print(f"Feliz aniversário, {self.nome}!!! Sua nova idade agora é: {self.idade}.")
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+# Criamos os OBJETOS da classe pessoa
+pessoa1 = pessoa("Ana", 30, 55, 1.60)
+pessoa2 = pessoa("Luiz", 25, 70, 1.80)
+
+# Chamando os métodos
+pessoa1.apresentacao()
+pessoa1.fazer_aniversario()
+pessoa1.apresentacao()
